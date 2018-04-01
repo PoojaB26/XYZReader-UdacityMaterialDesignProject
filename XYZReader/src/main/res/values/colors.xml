@@ -25,10 +25,10 @@
 
 
 
-    <color name="primary">#37474f</color>
-    <color name="primary_dark">#102027</color>
-    <color name="primary_light">#62727b</color>
-    <color name="colorAccent">#0277bd</color>
+    <color name="primary">#03a9f4</color>
+    <color name="primary_dark">#1565c0</color>
+    <color name="primary_light">#90caf9</color>
+    <color name="colorAccent">#ffab40</color>
 
     <color name="primary_text">#212121</color>
     <color name="secondary_text">#757575</color>

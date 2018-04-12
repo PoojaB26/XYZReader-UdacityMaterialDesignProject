@@ -1,13 +1,20 @@
-<com.example.xyzreader.ui.DrawInsetsFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.xyzreader.ui.DrawInsetsFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tool="http://schemas.android.com/tools"
     android:id="@+id/draw_insets_frame_layout"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/d"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <com.example.xyzreader.ui.ObservableScrollView
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
+        android:nestedScrollingEnabled="true"
         android:layout_height="match_parent">
 
         <FrameLayout
@@ -87,7 +94,6 @@
                     android:layout_marginRight="@dimen/detail_inner_horiz_margin"
                     android:paddingBottom="@dimen/detail_body_bottom_margin"
                     android:textColor="@color/primary_text"
-                    android:textColorLink="@color/theme_accent"
                     android:textSize="@dimen/detail_body_text_size"
                     android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier" />
 
@@ -100,8 +106,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:src="@drawable/ic_share"
+        app:layout_behavior="com.example.xyzreader.ui.ScrollAwareFABBehavior"
         android:layout_margin="@dimen/fab_margin"
         />
 
-
+</android.support.design.widget.CoordinatorLayout>
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>
+
